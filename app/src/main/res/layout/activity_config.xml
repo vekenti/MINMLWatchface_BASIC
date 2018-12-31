@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText">
+
+    <View
+        android:id="@+id/watch_face_background"
+        android:layout_width="@dimen/settings_preview_size"
+        android:layout_height="@dimen/settings_preview_size"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/settings_watch_face_preview_background"/>
+
+
+    <ImageView
+        android:id="@+id/left_complication_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/added_complication"
+        style="?android:borderlessButtonStyle"
+        android:background="@android:color/transparent"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/watch_face_background"
+        android:contentDescription="TODO" />
+
+    <ImageButton
+        android:id="@+id/left_complication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:borderlessButtonStyle"
+        android:background="@android:color/transparent"
+        android:layout_alignTop="@+id/left_complication_background"
+        android:layout_alignStart="@+id/watch_face_background"
+        android:contentDescription="TODO" />
+
+    <ImageButton
+        android:id="@+id/right_complication"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/right_complication_background"
+        android:layout_alignEnd="@+id/watch_face_background"
+        android:background="@android:color/transparent"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/right_complication_background"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/right_complication"
+        android:layout_alignTop="@+id/left_complication_background"
+        android:adjustViewBounds="false"
+        android:background="@android:color/transparent"
+        android:cropToPadding="false"
+        android:src="@drawable/added_complication" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="12\n10"
+        android:textSize="25dp"
+        android:visibility="visible" />
+
+</RelativeLayout>

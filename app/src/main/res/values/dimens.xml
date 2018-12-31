@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="digital_text_size">40dp</dimen>
+    <dimen name="digital_text_size_round">45dp</dimen>
+    <dimen name="digital_hour_size_round">45dp</dimen>
+    <dimen name="digital_minute_size_round">45dp</dimen>
+    <dimen name="digital_x_offset">50dp</dimen>
+    <dimen name="digital_x_offset_round">105dp</dimen>
+    <dimen name="digital_y_offset">90dp</dimen>
+    <dimen name="settings_preview_size">180dp</dimen>
+</resources>
